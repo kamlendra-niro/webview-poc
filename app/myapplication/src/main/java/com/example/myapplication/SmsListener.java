@@ -16,14 +16,14 @@ public class SmsListener extends BroadcastReceiver {
         if (Telephony.Sms.Intents.SMS_RECEIVED_ACTION.equals(intent.getAction())) {
             for (SmsMessage smsMessage : Telephony.Sms.Intents.getMessagesFromIntent(intent)) {
                 String messageBody = smsMessage.getMessageBody();
-                System.out.println("#SmsListener messageBody >>> " + messageBody);
+                System.out.println("#SmsListenerLibrary messageBody >>> " + messageBody);
                 SharedPreferences.Editor editor = context.getSharedPreferences("MyPref", MODE_PRIVATE).edit();
                 editor.putString("messageBody", messageBody);
                 editor.apply();
             }
-            System.out.println("#SmsListener onReceive 2>>> Outside");
+            System.out.println("#SmsListenerLibrary onReceive 2>>> Outside");
         }
-        System.out.println("#SmsListener onReceive 1>>> Outside");
+        System.out.println("#SmsListenerLibrary onReceive 1>>> Outside");
 
     }
 

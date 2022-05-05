@@ -40,11 +40,6 @@ open class NiroWebView : AppCompatActivity() {
     internal var URL = "https://niro.money/"
 
 
-    //for attach files
-    private var mCameraPhotoPath: String? = null
-    private var mFilePathCallback: ValueCallback<Array<Uri>>? = null
-    internal var doubleBackToExitPressedOnce = false
-
 
     //AdView adView;
     private lateinit var btnTryAgain: Button
@@ -63,6 +58,15 @@ open class NiroWebView : AppCompatActivity() {
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true)
 
         mContext = this
+
+        initViews()
+        requestPermissions()
+
+    }
+
+
+
+    private  fun initViews(){
         mWebView = findViewById<View>(R.id.webview) as WebView
         prgs = findViewById<View>(R.id.progressBar) as ProgressBar
         btnTryAgain = findViewById<View>(R.id.btn_try_again) as Button
@@ -86,7 +90,8 @@ open class NiroWebView : AppCompatActivity() {
             layoutNoInternet.visibility = View.GONE
             requestForWebview()
         }
-
+    }
+    private fun requestPermissions() {
         if (ContextCompat.checkSelfPermission(
                 this,
                 Manifest.permission.RECEIVE_SMS
@@ -98,7 +103,6 @@ open class NiroWebView : AppCompatActivity() {
             );
         }
     }
-
 
     private fun requestForWebview() {
 
@@ -229,10 +233,6 @@ open class NiroWebView : AppCompatActivity() {
 
     companion object {
         internal var TAG = "---MainActivity"
-        val INPUT_FILE_REQUEST_CODE = 1
-        val EXTRA_FROM_NOTIFICATION = "EXTRA_FROM_NOTIFICATION"
-
-
         //for security
         @Throws(NoSuchAlgorithmException::class, InvalidKeySpecException::class)
         fun generateKey(): SecretKey {
