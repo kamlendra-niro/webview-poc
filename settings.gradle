@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "WebViewPOC"
 include ':app'
+include ':app:myapplication'

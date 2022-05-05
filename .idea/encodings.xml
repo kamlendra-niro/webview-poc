@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/myapplication/src/main/res/drawable/bg_main.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/myapplication/src/main/res/drawable/cs_custom_progressbar.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/myapplication/src/main/res/drawable/ic_logo.png" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/myapplication/src/main/res/drawable/ic_love.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/myapplication/src/main/res/drawable/ic_no_internet.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/myapplication/src/main/res/drawable/ic_warning.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/myapplication/src/main/res/values/colors.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/myapplication/src/main/res/values/styles.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/bg_main.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/cs_custom_progressbar.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_logo.png" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_love.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_no_internet.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_warning.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/values/ic_launcher_background.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml" charset="ISO-8859-1" />
+  </component>
+</project>
